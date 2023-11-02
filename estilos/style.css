@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../fontes/LEMONMILK.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0:#FFFFFF;
+    --cor1:#F6F6F6;
+    --cor2:#404EED;
+    --cor3:#5865F1;
+    --cor4:#313338;
+    --cor5:#292841;
+
+    --fonte_padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte_destaque: 'Bebas Neue', cursive;
+    --font_android: 'Lemon Milk', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color:var(--cor3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: auto;
+    background-color: var(--cor1);
+    max-width: 800px;
+    min-width: 320px;
+    min-height: 50px;
+    text-align: center;
+}
+
+header > h1 {
+    font-weight: bolder;
+    font-size: 3em;
+    color: var(--cor3);
+    font-family: var(--font_android);
+    padding-top:5px;
+    padding-bottom: 20px;
+}
+
+header > p {
+    font-family: var(--font_android);
+    font-size: 1.2em;
+    color: var(--cor2);
+    max-width: 600px;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+  
+}
+
+nav {
+    width: 800px;
+    min-width: 320px;
+    margin: auto;
+    color: var(--cor1);
+    background-color: var(--cor5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.445);
+}
+
+nav > a {
+    color: var(--cor0);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor0);
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    font-size: 2em;
+    text-align: center;
+    color: var(--cor5);
+    font-family: var(--font_android);
+}
+
+main h2 {
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--font_android);
+    font-family: var(--font_android);
+    color: var(--cor4);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+main a:hover {
+    color: var(--cor3);
+    background-color: var(--cor0);
+}
+
+main img.pq {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div {
+    padding: 20px;
+}
+
+div.intro{
+    background-color: var(--cor2);
+    padding: 20px;
+    text-align: center;
+}
+
+div.intro > h1 {
+    color: #FFFFFF;
+}
+
+div.intro > p {
+    color: var(--cor0);
+    text-align: center;;
+    font-weight: normal;
+}
+
+div.intro > p strong {
+    color: var(--cor1);
+}
+
+div.tipo-0 {
+    background-color: var(--cor0);
+    text-indent: 20px;
+}
+
+div.tipo-1 {
+    background-color: var(--cor1);
+    text-indent: 20px;
+}
+
+div.final {
+    background-color: var(--cor1);
+    text-indent: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--cor1);
+}
+
+aside h3 {
+    font-family: var(--font_android);
+    font-weight: normal;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+    padding: 15px;
+}
+
+aside > ul {
+    list-style-type: '\2714';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside strong {
+    color: var(--cor1);
+}
+
+aside a:hover {
+    color: var(--cor3);
+    background-color: var(--cor0);
+}
+
+footer {
+    text-align: center;
+    color: var(--cor0);
+    margin: 20px 0px 0px 0px;
+    background-color: var(--cor5);
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor0);
+}
