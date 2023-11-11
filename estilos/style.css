@@ -13,8 +13,9 @@
     --cor1:#F6F6F6;
     --cor2:#404EED;
     --cor3:#5865F1;
-    --cor4:#313338;
-    --cor5:#292841;
+    --cor4:#232c8a;
+    --cor5:#313338;
+    --cor6:#292841;
 
     --fonte_padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte_destaque: 'Bebas Neue', cursive;
@@ -24,12 +25,15 @@
 * {
     margin: 0px;
     padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
 }
 
 
 body{
     background-color:var(--cor3);
     font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.2s linear;
 }
 
 header {
@@ -96,7 +100,9 @@ main {
     max-width: 800px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
 }
+
 
 main h1 {
     font-size: 2em;
@@ -150,6 +156,7 @@ div.intro{
     background-color: var(--cor2);
     padding: 20px;
     text-align: center;
+
 }
 
 div.intro > h1 {
@@ -182,6 +189,52 @@ div.final {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 28px;
+    width: 50px;
+    transform: scale(1.5);
+    display: flex;
+}
+
+.label .ball {
+    background-color: var(--cor1);
+    padding: 0px;
+    border-radius:50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
 
 img {
     width: 100%;
